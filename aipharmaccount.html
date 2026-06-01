@@ -7,6 +7,86 @@
     <title>AIPharmAccount | CloudAiSoft</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .feature-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .parser-card {
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .parser-card:hover {
+            border-color: #667eea;
+            transform: scale(1.02);
+        }
+        .badge-new {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+        }
+        .benefit-list li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #333;
+        }
+        .benefit-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
     <!-- HEADER & NAVIGATION -->
@@ -31,252 +111,265 @@
         </nav>
     </header>
 
-    <!-- PRODUCT HERO -->
-    <section class="product-hero">
-        <div class="product-hero-content">
-            <span style="display: inline-block; background: #93C572; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-bottom: 1rem;">💚 Freemium Product - Try Free</span>
-            <h1>AIPharmAccount</h1>
-            <p class="tagline">The Intelligent Pharmacy Operating System</p>
-            <p class="hero-description">Stop managing. Start automating. Run your pharmacy smarter with AI-powered inventory, billing, and analytics—all in one platform.</p>
-            <div class="hero-buttons">
-                <button onclick="downloadAIPharmAccount()" class="btn btn-primary" style="border: none; cursor: pointer; background-color: var(--primary); padding: 12px 30px; border-radius: 5px; color: white; font-weight: bold;">Start Free Forever</button>
-                <a href="contact.html" class="btn btn-secondary">Schedule Demo</a>
+    <!-- HERO SECTION -->
+    <section class="hero-gradient" style="padding: 80px 20px; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="badge-new">✨ AI-Powered Pharmacy Management</div>
+
+            <h1 style="font-size: 3.5rem; margin: 1rem 0; font-weight: 900;">
+                Stop Managing.<br><span style="background: linear-gradient(120deg, #fff, #ffeb3b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Start Automating.</span>
+            </h1>
+
+            <p style="font-size: 1.3rem; margin: 1.5rem 0; opacity: 0.95; line-height: 1.6;">
+                Run your pharmacy smarter. Automate invoices. Track inventory in real-time. Get AI-powered insights. All in one beautiful desktop app.
+            </p>
+
+            <div style="margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <button onclick="downloadAIPharmAccount()" class="cta-button">🚀 Start Free Forever</button>
+                <a href="contact.html" class="cta-button" style="background: white; color: #667eea;">📅 Schedule Demo</a>
+            </div>
+
+            <p style="font-size: 0.9rem; margin-top: 2rem; opacity: 0.85;">
+                🇮🇳 Made in India • 🌍 Serving the World • 💚 Freemium Product • 🖥️ Desktop Only
+            </p>
+        </div>
+    </section>
+
+    <!-- PROBLEM & SOLUTION -->
+    <section style="padding: 80px 20px; background: #f8f9ff;">
+        <div class="section-container" style="max-width: 900px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <h2 style="font-size: 2.2rem; margin-top: 0; color: #333; line-height: 1.3;">
+                        The Pharmacy Problem
+                    </h2>
+                    <ul class="benefit-list" style="margin-top: 1.5rem; font-size: 1.05rem;">
+                        <li>⏱️ Manual billing takes hours</li>
+                        <li>📦 Inventory gets chaotic</li>
+                        <li>💸 Profit margins unclear</li>
+                        <li>📋 Compliance headaches</li>
+                        <li>🔍 No real-time visibility</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 style="font-size: 2.2rem; margin-top: 0; color: #667eea; line-height: 1.3;">
+                        The AIPharmAccount Solution
+                    </h2>
+                    <ul class="benefit-list" style="margin-top: 1.5rem; font-size: 1.05rem;">
+                        <li>⚡ Invoices parsed in seconds</li>
+                        <li>🎯 Smart inventory management</li>
+                        <li>💹 Instant profitability insights</li>
+                        <li>✅ Automatic GST compliance</li>
+                        <li>📊 Real-time analytics dashboard</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- OVERVIEW -->
-    <section class="product-section">
+    <!-- AI PARSER SHOWCASE -->
+    <section style="padding: 80px 20px;">
         <div class="section-container">
-            <h2>Built for Modern Pharmacies</h2>
-            <p>Pharmacy management shouldn't be this hard. Manual billing takes hours. Inventory gets messy. You lose track of profits. We built AIPharmAccount to fix all of that.</p>
-            <p>It's a complete pharmacy operating system—not just software. Real-time inventory tracking, automated billing, AI analytics, and customer management in one beautiful platform. Whether you're running one pharmacy or managing multiple locations, AIPharmAccount grows with you.</p>
-        </div>
-    </section>
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; margin: 0 0 1rem; color: #333;">
+                    🤖 Choose Your AI Parser
+                </h2>
+                <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">
+                    One-click invoice extraction. Multiple AI options. Pick what fits your workflow.
+                </p>
+            </div>
 
-    <!-- KEY FEATURES -->
-    <section class="features-section">
-        <h2 class="section-title">Everything You Need</h2>
-        <p class="section-subtitle">All-in-one pharmacy management—no integrations needed</p>
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-box"></i>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <!-- DJL Parser -->
+                <div class="parser-card" style="padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                    <h3 style="margin: 0 0 0.5rem; color: #333;">DJL Parser</h3>
+                    <p style="color: #999; font-size: 0.9rem; margin: 0 0 1.5rem;">Lightning fast</p>
+                    <ul class="benefit-list" style="font-size: 0.9rem;">
+                        <li style="padding: 0.5rem 0;">Instant extraction</li>
+                        <li style="padding: 0.5rem 0;">Zero API costs</li>
+                        <li style="padding: 0.5rem 0;">Works offline</li>
+                        <li style="padding: 0.5rem 0;">85% accuracy</li>
+                    </ul>
                 </div>
-                <h3>Smart Inventory</h3>
-                <p>Know exactly what you have. Real-time stock tracking, batch management, expiry alerts before you lose money.</p>
+
+                <!-- Cloud AI Parser -->
+                <div class="parser-card" style="padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); border: 2px solid #667eea;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌐</div>
+                    <h3 style="margin: 0 0 0.5rem; color: #667eea;">Cloud AI</h3>
+                    <p style="color: #667eea; font-size: 0.9rem; margin: 0 0 1.5rem; font-weight: bold;">⭐ Best Quality</p>
+                    <ul class="benefit-list" style="font-size: 0.9rem;">
+                        <li style="padding: 0.5rem 0;">95% accuracy</li>
+                        <li style="padding: 0.5rem 0;">Claude & Gemini</li>
+                        <li style="padding: 0.5rem 0;">Complex invoices</li>
+                        <li style="padding: 0.5rem 0;">Pay-as-you-go</li>
+                    </ul>
+                </div>
+
+                <!-- Ollama Parser -->
+                <div class="parser-card" style="padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
+                    <h3 style="margin: 0 0 0.5rem; color: #333;">Ollama</h3>
+                    <p style="color: #999; font-size: 0.9rem; margin: 0 0 1.5rem;">Self-hosted</p>
+                    <ul class="benefit-list" style="font-size: 0.9rem;">
+                        <li style="padding: 0.5rem 0;">Mistral 7.2B</li>
+                        <li style="padding: 0.5rem 0;">Run locally</li>
+                        <li style="padding: 0.5rem 0;">Full control</li>
+                        <li style="padding: 0.5rem 0;">100% free</li>
+                    </ul>
+                </div>
             </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-receipt"></i>
-                </div>
-                <h3>Automated Billing</h3>
-                <p>Stop manual data entry. Upload invoices, we extract everything. Create bills in seconds instead of hours.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <h3>AI That Actually Works</h3>
-                <p>Claude AI and Google Gemini analyze your data. Real insights. Real recommendations. Real profits.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Instant Insights</h3>
-                <p>See what sells, what's profitable, where money is leaking. Custom reports, any date range, instantly.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Team Management</h3>
-                <p>Regular users, AI power users, admins. Everyone gets the right access level. Full audit trail of who did what.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>Your Data is Safe</h3>
-                <p>Automatic daily backups. Disaster recovery. Military-grade encryption. Sleep well at night.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3>Works Anywhere</h3>
-                <p>Desktop, tablet, mobile. Same powerful features on any device. Works online or offline.</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">
-                    <i class="fas fa-play-circle"></i>
-                </div>
-                <h3>Go Live in Minutes</h3>
-                <p>No complex setup. No IT consultants needed. Start using it today. Literally.</p>
+
+            <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 2rem; border-radius: 12px; text-align: center;">
+                <p style="margin: 0; color: #333; font-size: 1.05rem;">
+                    <strong>📄 Extract Everything:</strong> Product names, batch numbers, mfg & expiry dates, HSN codes, quantities, prices, supplier details, GST rates—all automatically!
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works-section">
-        <h2 class="section-title">Your First Day</h2>
-        <p class="section-subtitle">From signup to running your pharmacy in 4 easy steps</p>
-        <div class="workflow">
-            <div class="workflow-step">
-                <div class="step-number">1</div>
-                <h3>Sign Up (2 mins)</h3>
-                <p>Create account, add your pharmacy details. That's it.</p>
+    <!-- FEATURES GRID -->
+    <section style="padding: 80px 20px; background: #f8f9ff;">
+        <div class="section-container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; margin: 0 0 1rem; color: #333;">
+                    Everything You Need
+                </h2>
+                <p style="font-size: 1.1rem; color: #666;">Complete pharmacy operating system in one app</p>
             </div>
-            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
-            <div class="workflow-step">
-                <div class="step-number">2</div>
-                <h3>Add Inventory (10 mins)</h3>
-                <p>Upload your current stock. Manual entry or batch import.</p>
-            </div>
-            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
-            <div class="workflow-step">
-                <div class="step-number">3</div>
-                <h3>Start Transactions (Now)</h3>
-                <p>Create bills, track sales, manage customers. Start working.</p>
-            </div>
-            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
-            <div class="workflow-step">
-                <div class="step-number">4</div>
-                <h3>Watch AI Work (Every Day)</h3>
-                <p>AI analyzes data, gives insights, helps you make better decisions.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- TECH STACK -->
-    <section class="tech-stack-section">
-        <h2 class="section-title">Built to Last</h2>
-        <p class="section-subtitle">Enterprise-grade technology, startup-friendly pricing</p>
-        <div class="tech-grid">
-            <div class="tech-item">
-                <i class="fab fa-java"></i>
-                <h4>Java 21</h4>
-                <p>Latest, most reliable</p>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-leaf"></i>
-                <h4>Spring Boot</h4>
-                <p>Battle-tested backend</p>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-database"></i>
-                <h4>SQLite</h4>
-                <p>Lightweight, powerful</p>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-brain"></i>
-                <h4>Claude AI</h4>
-                <p>Smarter analytics</p>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-robot"></i>
-                <h4>Google Gemini</h4>
-                <p>Better insights</p>
-            </div>
-            <div class="tech-item">
-                <i class="fas fa-square"></i>
-                <h4>JavaFX</h4>
-                <p>Smooth, responsive UI</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- USER ROLES -->
-    <section class="roles-section">
-        <h2 class="section-title">Built for Your Team</h2>
-        <p class="section-subtitle">Right access level for every role</p>
-        <div class="roles-grid">
-            <div class="role-card">
-                <h3>👤 Counter Staff</h3>
-                <p class="role-desc">Handle daily transactions</p>
-                <ul class="role-features">
-                    <li><i class="fas fa-check"></i> Create sales bills</li>
-                    <li><i class="fas fa-check"></i> View stock</li>
-                    <li><i class="fas fa-check"></i> Process payments</li>
-                    <li><i class="fas fa-check"></i> Track customers</li>
-                    <li><i class="fas fa-times"></i> AI Analytics access</li>
-                </ul>
-            </div>
-            <div class="role-card featured">
-                <div class="role-badge">⭐ Manager</div>
-                <h3>📊 Manager</h3>
-                <p class="role-desc">Run the operation smart</p>
-                <ul class="role-features">
-                    <li><i class="fas fa-check"></i> All counter features</li>
-                    <li><i class="fas fa-check"></i> AI insights & reports</li>
-                    <li><i class="fas fa-check"></i> Inventory forecasts</li>
-                    <li><i class="fas fa-check"></i> Profit analytics</li>
-                    <li><i class="fas fa-times"></i> Staff management</li>
-                </ul>
-            </div>
-            <div class="role-card">
-                <h3>🔑 Owner/Admin</h3>
-                <p class="role-desc">Full control & oversight</p>
-                <ul class="role-features">
-                    <li><i class="fas fa-check"></i> All features</li>
-                    <li><i class="fas fa-check"></i> Add/remove users</li>
-                    <li><i class="fas fa-check"></i> Manage settings</li>
-                    <li><i class="fas fa-check"></i> View all data</li>
-                    <li><i class="fas fa-check"></i> Complete control</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- CUSTOMER BENEFITS -->
-    <section class="testimonial-section">
-        <h2 class="section-title">Transform Your Pharmacy</h2>
-        <p class="section-subtitle">Real benefits that hit your bottom line</p>
-        <div class="testimonials-grid">
-            <div class="testimonial">
-                <div class="testimonial-stars">💰 +30% Profit Margin</div>
-                <p><strong>Stop losing money to manual errors and waste.</strong> Automated billing eliminates data-entry mistakes. Real-time inventory means no expired stock sitting on shelves. AI insights show you exactly where to cut costs. Most users see measurable profit improvement within 30 days.</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">✓</div>
-                    <div class="author-info">
-                        <h4>Save Time & Money</h4>
-                        <p>10-15 hours/week on manual work</p>
-                    </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div class="feature-card" style="padding: 2rem; background: white; border-radius: 12px; border-left: 4px solid #667eea;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">📦</div>
+                    <h4 style="margin: 0 0 0.8rem; color: #333; font-size: 1.1rem;">Smart Inventory</h4>
+                    <p style="color: #666; line-height: 1.6; margin: 0;">Real-time tracking • Batch management • Expiry alerts • Multi-location support</p>
                 </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-stars">📦 Zero Waste</div>
-                <p><strong>Know exactly what expires and when.</strong> Never discover expired stock during physical inventory. Automatic alerts days before expiry. Batch-level tracking. Predictive analytics tell you what will expire next. Reduce shrinkage by 20-40%.</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">✓</div>
-                    <div class="author-info">
-                        <h4>Inventory Control</h4>
-                        <p>Reduce waste by 20-40%</p>
-                    </div>
+
+                <div class="feature-card" style="padding: 2rem; background: white; border-radius: 12px; border-left: 4px solid #667eea;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">💳</div>
+                    <h4 style="margin: 0 0 0.8rem; color: #333; font-size: 1.1rem;">Auto Billing</h4>
+                    <p style="color: #666; line-height: 1.6; margin: 0;">AI-powered parsing • GST compliance • Multiple payment modes • Instant receipts</p>
                 </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-stars">🤖 Competitive Edge</div>
-                <p><strong>Leverage AI before your competitors do.</strong> Understand customer buying patterns. Predict demand. Optimize pricing. Get personalized recommendations from Claude AI and Google Gemini. Stay ahead of the curve with data-driven decisions.</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">✓</div>
-                    <div class="author-info">
-                        <h4>AI-Powered Insights</h4>
-                        <p>Make better decisions faster</p>
-                    </div>
+
+                <div class="feature-card" style="padding: 2rem; background: white; border-radius: 12px; border-left: 4px solid #667eea;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🤖</div>
+                    <h4 style="margin: 0 0 0.8rem; color: #333; font-size: 1.1rem;">AI Analytics</h4>
+                    <p style="color: #666; line-height: 1.6; margin: 0;">Claude AI insights • Gemini analysis • Profit trends • Smart recommendations</p>
+                </div>
+
+                <div class="feature-card" style="padding: 2rem; background: white; border-radius: 12px; border-left: 4px solid #667eea;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">👥</div>
+                    <h4 style="margin: 0 0 0.8rem; color: #333; font-size: 1.1rem;">Team Access</h4>
+                    <p style="color: #666; line-height: 1.6; margin: 0;">Role-based control • Multiple users • Activity logs • Secure login</p>
+                </div>
+
+                <div class="feature-card" style="padding: 2rem; background: white; border-radius: 12px; border-left: 4px solid #667eea;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">📊</div>
+                    <h4 style="margin: 0 0 0.8rem; color: #333; font-size: 1.1rem;">Reports</h4>
+                    <p style="color: #666; line-height: 1.6; margin: 0;">Sales analysis • Profit trends • PDF export • Custom date ranges</p>
+                </div>
+
+                <div class="feature-card" style="padding: 2rem; background: white; border-radius: 12px; border-left: 4px solid #667eea;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚙️</div>
+                    <h4 style="margin: 0 0 0.8rem; color: #333; font-size: 1.1rem;">Customizable</h4>
+                    <p style="color: #666; line-height: 1.6; margin: 0;">Choose your parser • Configure AI • Custom workflows • Scale easily</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta-section">
-        <h2 class="section-title cta-white-title">Stop Struggling. Start Growing.</h2>
-        <p class="section-subtitle cta-white-subtitle">Free forever plan with all core features. No credit card. No commitments.</p>
-        <div class="hero-buttons">
-            <button onclick="downloadAIPharmAccount()" class="btn btn-primary" style="border: none; cursor: pointer; background-color: var(--primary); padding: 12px 30px; border-radius: 5px; color: white; font-weight: bold;">Start Free Now</button>
-            <a href="pricing.html" class="btn btn-secondary">View Pricing</a>
+    <!-- STATS SECTION -->
+    <section style="padding: 60px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div class="section-container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                <div class="stat-box">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">AI Parser Options</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Extraction Accuracy</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Forever Available</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Unlimited Users</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section style="padding: 80px 20px;">
+        <div class="section-container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem; margin: 0 0 1rem; color: #333;">
+                    Simple Pricing
+                </h2>
+                <p style="font-size: 1.1rem; color: #666;">Start free. Upgrade when you need support.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Free -->
+                <div style="padding: 2.5rem; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center;">
+                    <h3 style="margin: 0 0 0.5rem; font-size: 1.5rem; color: #333;">Free Forever</h3>
+                    <div style="font-size: 3rem; font-weight: bold; color: #667eea; margin: 1rem 0;">$0</div>
+                    <p style="color: #999; margin: 0 0 1.5rem;">All features • Self-service</p>
+                    <button onclick="downloadAIPharmAccount()" class="cta-button" style="width: 100%; margin-bottom: 1.5rem;">Start Now</button>
+                    <ul class="benefit-list" style="font-size: 0.9rem; text-align: left;">
+                        <li style="padding: 0.6rem 0;">✅ All core features</li>
+                        <li style="padding: 0.6rem 0;">✅ AI invoice parsing</li>
+                        <li style="padding: 0.6rem 0;">✅ Unlimited users</li>
+                        <li style="padding: 0.6rem 0;">❌ No official support</li>
+                    </ul>
+                </div>
+
+                <!-- Starter -->
+                <div style="padding: 2.5rem; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center;">
+                    <h3 style="margin: 0 0 0.5rem; font-size: 1.5rem; color: #333;">Starter</h3>
+                    <div style="font-size: 3rem; font-weight: bold; color: #667eea; margin: 1rem 0;">$20<span style="font-size: 1.2rem; color: #999;">/mo</span></div>
+                    <p style="color: #999; margin: 0 0 1.5rem;">All features • Email support</p>
+                    <a href="contact.html" class="cta-button" style="width: 100%; display: block; text-align: center; margin-bottom: 1.5rem; text-decoration: none;">Get Started</a>
+                    <ul class="benefit-list" style="font-size: 0.9rem; text-align: left;">
+                        <li style="padding: 0.6rem 0;">✅ Everything in Free</li>
+                        <li style="padding: 0.6rem 0;">✅ Email support (24h)</li>
+                        <li style="padding: 0.6rem 0;">✅ Bug fixes & updates</li>
+                        <li style="padding: 0.6rem 0;">❌ No AI feature support</li>
+                    </ul>
+                </div>
+
+                <!-- Professional -->
+                <div style="padding: 2.5rem; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 12px; box-shadow: 0 10px 35px rgba(102, 126, 234, 0.3); text-align: center; color: white; transform: scale(1.05);">
+                    <span style="display: inline-block; background: white; color: #667eea; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem;">⭐ Recommended</span>
+                    <h3 style="margin: 0 0 0.5rem; font-size: 1.5rem;">Professional</h3>
+                    <div style="font-size: 3rem; font-weight: bold; margin: 1rem 0;">$40<span style="font-size: 1.2rem;">/mo</span></div>
+                    <p style="opacity: 0.9; margin: 0 0 1.5rem;">Everything + Full AI support</p>
+                    <a href="contact.html" class="cta-button" style="width: 100%; display: block; text-align: center; margin-bottom: 1.5rem; text-decoration: none; background: white; color: #667eea;">Get Started</a>
+                    <ul class="benefit-list" style="font-size: 0.9rem; text-align: left;">
+                        <li style="padding: 0.6rem 0;">✅ Everything in Starter</li>
+                        <li style="padding: 0.6rem 0;">✅ AI feature support</li>
+                        <li style="padding: 0.6rem 0;">✅ Priority bug fixes</li>
+                        <li style="padding: 0.6rem 0;">✅ Mission-critical ready</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section style="padding: 80px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin: 0 0 1.5rem; font-weight: bold;">
+            Ready to Transform Your Pharmacy?
+        </h2>
+        <p style="font-size: 1.2rem; margin: 0 0 2rem; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            🇮🇳 Made in India • 🌍 For the World's Health • 💚 Freemium • 🖥️ Desktop Only
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button onclick="downloadAIPharmAccount()" class="cta-button" style="background: white; color: #667eea;">🚀 Start Free Now</button>
+            <a href="contact.html" class="cta-button" style="border: 2px solid white; background: transparent;">📅 Schedule Demo</a>
         </div>
     </section>
 
@@ -298,19 +391,19 @@
             <div class="footer-section">
                 <h4>Company</h4>
                 <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
+                <a href="about.html">About</a>
                 <a href="#">Blog</a>
                 <a href="contact.html">Contact</a>
             </div>
             <div class="footer-section">
                 <h4>Legal</h4>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
                 <a href="#">Security</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 CloudAiSoft. All rights reserved. Powered by Claude AI & Google Gemini.</p>
+            <p>&copy; 2026 CloudAiSoft. 🇮🇳 Made in India • 🌍 For the World's Health • Powered by Claude AI & Google Gemini.</p>
         </div>
     </footer>
 

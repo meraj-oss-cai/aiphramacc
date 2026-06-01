@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==================== DOWNLOAD FUNCTION ====================
     window.downloadAIPharmAccount = function() {
         // Google Drive download link
-        const downloadLink = 'https://drive.google.com/file/d/1Xcnq_mvWKxgJjkIMPn2hSuX_F1tchz7S/view?usp=sharing';
+        const downloadLink = 'https://drive.google.com/file/d/1t50GJ7LJ5I2r2XT5ibtb9xemAQBpvChB/view?usp=drive_link';
 
         // Open download link in new tab
         window.open(downloadLink, '_blank');
