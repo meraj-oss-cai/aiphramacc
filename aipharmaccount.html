@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIPharmAccount - Intelligent Pharmacy Management System powered by AI">
+    <title>AIPharmAccount | CloudAiSoft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                CloudAiSoft
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PRODUCT HERO -->
+    <section class="product-hero">
+        <div class="product-hero-content">
+            <span style="display: inline-block; background: #93C572; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-bottom: 1rem;">💚 Freemium Product - Try Free</span>
+            <h1>AIPharmAccount</h1>
+            <p class="tagline">The Intelligent Pharmacy Operating System</p>
+            <p class="hero-description">Stop managing. Start automating. Run your pharmacy smarter with AI-powered inventory, billing, and analytics—all in one platform.</p>
+            <div class="hero-buttons">
+                <button onclick="downloadAIPharmAccount()" class="btn btn-primary" style="border: none; cursor: pointer; background-color: var(--primary); padding: 12px 30px; border-radius: 5px; color: white; font-weight: bold;">Start Free Forever</button>
+                <a href="contact.html" class="btn btn-secondary">Schedule Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="product-section">
+        <div class="section-container">
+            <h2>Built for Modern Pharmacies</h2>
+            <p>Pharmacy management shouldn't be this hard. Manual billing takes hours. Inventory gets messy. You lose track of profits. We built AIPharmAccount to fix all of that.</p>
+            <p>It's a complete pharmacy operating system—not just software. Real-time inventory tracking, automated billing, AI analytics, and customer management in one beautiful platform. Whether you're running one pharmacy or managing multiple locations, AIPharmAccount grows with you.</p>
+        </div>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section class="features-section">
+        <h2 class="section-title">Everything You Need</h2>
+        <p class="section-subtitle">All-in-one pharmacy management—no integrations needed</p>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-box"></i>
+                </div>
+                <h3>Smart Inventory</h3>
+                <p>Know exactly what you have. Real-time stock tracking, batch management, expiry alerts before you lose money.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-receipt"></i>
+                </div>
+                <h3>Automated Billing</h3>
+                <p>Stop manual data entry. Upload invoices, we extract everything. Create bills in seconds instead of hours.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI That Actually Works</h3>
+                <p>Claude AI and Google Gemini analyze your data. Real insights. Real recommendations. Real profits.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Instant Insights</h3>
+                <p>See what sells, what's profitable, where money is leaking. Custom reports, any date range, instantly.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Team Management</h3>
+                <p>Regular users, AI power users, admins. Everyone gets the right access level. Full audit trail of who did what.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Your Data is Safe</h3>
+                <p>Automatic daily backups. Disaster recovery. Military-grade encryption. Sleep well at night.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Works Anywhere</h3>
+                <p>Desktop, tablet, mobile. Same powerful features on any device. Works online or offline.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <h3>Go Live in Minutes</h3>
+                <p>No complex setup. No IT consultants needed. Start using it today. Literally.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works-section">
+        <h2 class="section-title">Your First Day</h2>
+        <p class="section-subtitle">From signup to running your pharmacy in 4 easy steps</p>
+        <div class="workflow">
+            <div class="workflow-step">
+                <div class="step-number">1</div>
+                <h3>Sign Up (2 mins)</h3>
+                <p>Create account, add your pharmacy details. That's it.</p>
+            </div>
+            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="workflow-step">
+                <div class="step-number">2</div>
+                <h3>Add Inventory (10 mins)</h3>
+                <p>Upload your current stock. Manual entry or batch import.</p>
+            </div>
+            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="workflow-step">
+                <div class="step-number">3</div>
+                <h3>Start Transactions (Now)</h3>
+                <p>Create bills, track sales, manage customers. Start working.</p>
+            </div>
+            <div class="workflow-arrow"><i class="fas fa-arrow-right"></i></div>
+            <div class="workflow-step">
+                <div class="step-number">4</div>
+                <h3>Watch AI Work (Every Day)</h3>
+                <p>AI analyzes data, gives insights, helps you make better decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="tech-stack-section">
+        <h2 class="section-title">Built to Last</h2>
+        <p class="section-subtitle">Enterprise-grade technology, startup-friendly pricing</p>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <i class="fab fa-java"></i>
+                <h4>Java 21</h4>
+                <p>Latest, most reliable</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-leaf"></i>
+                <h4>Spring Boot</h4>
+                <p>Battle-tested backend</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <h4>SQLite</h4>
+                <p>Lightweight, powerful</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-brain"></i>
+                <h4>Claude AI</h4>
+                <p>Smarter analytics</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-robot"></i>
+                <h4>Google Gemini</h4>
+                <p>Better insights</p>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-square"></i>
+                <h4>JavaFX</h4>
+                <p>Smooth, responsive UI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- USER ROLES -->
+    <section class="roles-section">
+        <h2 class="section-title">Built for Your Team</h2>
+        <p class="section-subtitle">Right access level for every role</p>
+        <div class="roles-grid">
+            <div class="role-card">
+                <h3>👤 Counter Staff</h3>
+                <p class="role-desc">Handle daily transactions</p>
+                <ul class="role-features">
+                    <li><i class="fas fa-check"></i> Create sales bills</li>
+                    <li><i class="fas fa-check"></i> View stock</li>
+                    <li><i class="fas fa-check"></i> Process payments</li>
+                    <li><i class="fas fa-check"></i> Track customers</li>
+                    <li><i class="fas fa-times"></i> AI Analytics access</li>
+                </ul>
+            </div>
+            <div class="role-card featured">
+                <div class="role-badge">⭐ Manager</div>
+                <h3>📊 Manager</h3>
+                <p class="role-desc">Run the operation smart</p>
+                <ul class="role-features">
+                    <li><i class="fas fa-check"></i> All counter features</li>
+                    <li><i class="fas fa-check"></i> AI insights & reports</li>
+                    <li><i class="fas fa-check"></i> Inventory forecasts</li>
+                    <li><i class="fas fa-check"></i> Profit analytics</li>
+                    <li><i class="fas fa-times"></i> Staff management</li>
+                </ul>
+            </div>
+            <div class="role-card">
+                <h3>🔑 Owner/Admin</h3>
+                <p class="role-desc">Full control & oversight</p>
+                <ul class="role-features">
+                    <li><i class="fas fa-check"></i> All features</li>
+                    <li><i class="fas fa-check"></i> Add/remove users</li>
+                    <li><i class="fas fa-check"></i> Manage settings</li>
+                    <li><i class="fas fa-check"></i> View all data</li>
+                    <li><i class="fas fa-check"></i> Complete control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER BENEFITS -->
+    <section class="testimonial-section">
+        <h2 class="section-title">Transform Your Pharmacy</h2>
+        <p class="section-subtitle">Real benefits that hit your bottom line</p>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <div class="testimonial-stars">💰 +30% Profit Margin</div>
+                <p><strong>Stop losing money to manual errors and waste.</strong> Automated billing eliminates data-entry mistakes. Real-time inventory means no expired stock sitting on shelves. AI insights show you exactly where to cut costs. Most users see measurable profit improvement within 30 days.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">✓</div>
+                    <div class="author-info">
+                        <h4>Save Time & Money</h4>
+                        <p>10-15 hours/week on manual work</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-stars">📦 Zero Waste</div>
+                <p><strong>Know exactly what expires and when.</strong> Never discover expired stock during physical inventory. Automatic alerts days before expiry. Batch-level tracking. Predictive analytics tell you what will expire next. Reduce shrinkage by 20-40%.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">✓</div>
+                    <div class="author-info">
+                        <h4>Inventory Control</h4>
+                        <p>Reduce waste by 20-40%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-stars">🤖 Competitive Edge</div>
+                <p><strong>Leverage AI before your competitors do.</strong> Understand customer buying patterns. Predict demand. Optimize pricing. Get personalized recommendations from Claude AI and Google Gemini. Stay ahead of the curve with data-driven decisions.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">✓</div>
+                    <div class="author-info">
+                        <h4>AI-Powered Insights</h4>
+                        <p>Make better decisions faster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <h2 class="section-title cta-white-title">Stop Struggling. Start Growing.</h2>
+        <p class="section-subtitle cta-white-subtitle">Free forever plan with all core features. No credit card. No commitments.</p>
+        <div class="hero-buttons">
+            <button onclick="downloadAIPharmAccount()" class="btn btn-primary" style="border: none; cursor: pointer; background-color: var(--primary); padding: 12px 30px; border-radius: 5px; color: white; font-weight: bold;">Start Free Now</button>
+            <a href="pricing.html" class="btn btn-secondary">View Pricing</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo footer-logo">
+                    <i class="fas fa-cloud"></i>
+                    CloudAiSoft
+                </div>
+                <p class="footer-text">Intelligent Solutions Powered by AI</p>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <a href="products.html">All Products</a>
+                <a href="aipharmaccount.html">AIPharmAccount</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CloudAiSoft. All rights reserved. Powered by Claude AI & Google Gemini.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | AIPharmAccount by CloudAiSoft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i class="fas fa-cloud"></i> CloudAiSoft</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Simple, Transparent Pricing</h1>
+        <p>Freemium Product - Start Free, Upgrade When You Need Support</p>
+    </section>
+
+    <section class="pricing-section">
+        <div style="text-align: center; margin-bottom: 2rem; padding: 1rem; background: rgba(193, 154, 107, 0.1); border-radius: 8px;">
+            <p style="font-size: 1.1rem; font-weight: bold; color: #C19A6B; margin: 0;">
+                💚 Freemium Product - All Features Free Forever
+            </p>
+            <p style="font-size: 0.95rem; color: #666; margin: 0.5rem 0 0 0;">
+                Start for free with all core features including AI. Upgrade anytime for professional support.
+            </p>
+        </div>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Free Forever</h3>
+                <div class="price">$0<span>/month</span></div>
+                <p class="pricing-desc">All features + AI, self-service</p>
+                <button onclick="downloadAIPharmAccount()" class="btn btn-secondary btn-full-width" style="border: none; cursor: pointer;">Start Now</button>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> ✅ Inventory management</li>
+                    <li><i class="fas fa-check"></i> ✅ Purchase & sales bills</li>
+                    <li><i class="fas fa-check"></i> ✅ Claude AI analytics</li>
+                    <li><i class="fas fa-check"></i> ✅ Google Gemini insights</li>
+                    <li><i class="fas fa-check"></i> ✅ Real-time reports</li>
+                    <li><i class="fas fa-check"></i> ✅ Unlimited users</li>
+                    <li><i class="fas fa-times"></i> ❌ No support (self-service only)</li>
+                </ul>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; background: rgba(147, 197, 114, 0.1); padding: 0.75rem; border-radius: 5px;">
+                    <strong>Self-managed:</strong> All features including AI. You use AI yourself, no support.
+                </p>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Paid Plan</h3>
+                <div class="price">$20<span>/month</span></div>
+                <p class="pricing-desc">All features + AI + support (non-AI)</p>
+                <a href="contact.html" class="btn btn-secondary btn-full-width">Get Started</a>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> ✅ All features included</li>
+                    <li><i class="fas fa-check"></i> ✅ Claude AI analytics</li>
+                    <li><i class="fas fa-check"></i> ✅ Google Gemini insights</li>
+                    <li><i class="fas fa-check"></i> ✅ Email support (24h response)</li>
+                    <li><i class="fas fa-check"></i> ✅ Bug fixes & maintenance</li>
+                    <li><i class="fas fa-check"></i> ✅ Unlimited users</li>
+                    <li><i class="fas fa-times"></i> ❌ AI support (self-service)</li>
+                </ul>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; background: rgba(52, 152, 219, 0.1); padding: 0.75rem; border-radius: 5px;">
+                    <strong>Supported:</strong> All features + AI. Official support for non-AI features. AI is self-service.
+                </p>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="featured-badge">⭐ Most Popular</div>
+                <h3>Professional Plan</h3>
+                <div class="price">$40<span>/month</span></div>
+                <p class="pricing-desc">All features + AI + full support</p>
+                <a href="contact.html" class="btn btn-primary btn-full-width">Get Started</a>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> ✅ All core features</li>
+                    <li><i class="fas fa-check"></i> ✅ Claude AI analytics</li>
+                    <li><i class="fas fa-check"></i> ✅ Google Gemini insights</li>
+                    <li><i class="fas fa-check"></i> ✅ Email support (24h response)</li>
+                    <li><i class="fas fa-check"></i> ✅ AI support included</li>
+                    <li><i class="fas fa-check"></i> ✅ Priority bug fixes</li>
+                    <li><i class="fas fa-check"></i> ✅ Pay separately for AI usage</li>
+                </ul>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 1rem; background: rgba(193, 154, 107, 0.1); padding: 0.75rem; border-radius: 5px;">
+                    <strong>Full package:</strong> Everything + AI analytics + complete support. For mission-critical operations.
+                </p>
+            </div>
+        </div>
+        <p style="text-align: center; color: var(--text-light); margin-top: 1.5rem; font-size: 0.9rem;"><strong>Important:</strong> All plans include AI features. Claude API and Google Gemini usage costs are billed separately on top of your plan - pay only for what you use.</p>
+    </section>
+
+    <section class="product-section">
+        <div class="section-container">
+            <h2>Frequently Asked Questions About Pricing</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <h4>Is the Free plan really completely free?</h4>
+                    <p>Yes! All features included - inventory, billing, AI analytics, reports, unlimited users. No official support (self-service only). Forever free.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's the difference between the three plans?</h4>
+                    <p><strong>Free ($0):</strong> All features + AI, self-service only. <strong>Paid ($20):</strong> All features + AI + official support (but NOT for AI). <strong>Professional ($40):</strong> All features + AI + official support (including for AI).</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do all plans include AI features?</h4>
+                    <p>Yes! All three plans (Free, Paid, Professional) include Claude AI and Google Gemini analytics. The difference is support - Free: none, Paid: non-AI only, Professional: full including AI.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What support do I get for AI features?</h4>
+                    <p>Free & Paid: None. You use AI yourself (self-service). Professional ($40): Full support including help with AI features.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I pay extra for AI usage?</h4>
+                    <p>Yes! All plans include AI features. Claude API and Google Gemini usage charges are billed separately - pay only for what you use.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Which plan should I choose?</h4>
+                    <p><strong>Free:</strong> Testing or non-critical use. <strong>$20:</strong> Small pharmacy, self-service comfortable. <strong>$40:</strong> Business-critical, need email support & priority fixes.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I upgrade/downgrade anytime?</h4>
+                    <p>Yes! Switch between plans instantly. Pay only for the current month at your chosen tier. No long-term contracts.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What if I find a bug?</h4>
+                    <p><strong>Free & $20:</strong> You can report it, but no guarantees. If it's critical (affects everyone), we'll fix it. <strong>$40:</strong> Priority bug fixes - we resolve within 48 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Why would I pay $40 instead of $20?</h4>
+                    <p>Professional support - someone to answer your questions, fix bugs fast, and maintain your system. For businesses relying on the software daily, this gives you peace of mind.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is Free really forever?</h4>
+                    <p>Yes! No time limit, no expiration. Use it forever, including AI features. The only trade-off: no support or maintenance promises. You manage it yourself.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer annual discounts?</h4>
+                    <p>Contact us for volume discounts and annual billing options. We're flexible for customers with specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 class="section-title cta-white-title">Start with AIPharmAccount Today</h2>
+        <p class="section-subtitle cta-white-subtitle">Free forever with core features, or upgrade for support + AI</p>
+        <div class="hero-buttons">
+            <button onclick="downloadAIPharmAccount()" class="btn btn-primary" style="border: none; cursor: pointer; background-color: var(--primary); padding: 12px 30px; border-radius: 5px; color: white; font-weight: bold;">Start Free Now</button>
+            <a href="products.html" class="btn btn-secondary">See Features</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo footer-logo"><i class="fas fa-cloud"></i> CloudAiSoft</div>
+                <p class="footer-text">Intelligent Solutions Powered by AI</p>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <a href="products.html">All Products</a>
+                <a href="aipharmaccount.html">AIPharmAccount</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CloudAiSoft. Powered by Claude AI & Google Gemini.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

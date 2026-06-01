@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CloudAiSoft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i class="fas fa-cloud"></i> CloudAiSoft</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you. Let's talk about how we can help.</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h2>Send us a Message</h2>
+                <form class="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="demo">Request Demo</option>
+                            <option value="support">Support</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full-width">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-container">
+                <h2>Contact Information</h2>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Support Email</h4>
+                        <p><a href="mailto:support@cloudaisoft.com">support@cloudaisoft.com</a></p>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 0.5rem;"><strong>Note:</strong> Customer support is only for Paid plan customers ($20/month). Free users have full feature access but no support available.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-sparkles"></i>
+                    <div>
+                        <h4>AI Features Available</h4>
+                        <p>Both Free and Paid plans include Claude AI and Google Gemini analytics.</p>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Pay separately for AI usage - transparent per-request pricing.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section">
+        <div class="section-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <h4>How can I get a demo?</h4>
+                    <p>Fill out the contact form above selecting "Request Demo". Our team will reach out via email to schedule a personalized demo within 24 hours.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's the pricing structure?</h4>
+                    <p><strong>Free:</strong> All features + AI (no support) | <strong>$20:</strong> All features + AI (no support) | <strong>$40:</strong> All features + AI + email support. View our <a href="pricing.html" class="text-link">pricing page</a> for details.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do all plans include AI?</h4>
+                    <p>Yes! Free, $20, and $40 plans ALL include Claude AI and Google Gemini analytics. The difference is support—Free and $20 are self-service, $40 includes priority email support.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What's the difference between $20 and $40?</h4>
+                    <p><strong>$20 Starter:</strong> All features + AI, self-service (no email support). <strong>$40 Professional:</strong> All features + AI + 24-hour email support, priority bug fixes, maintenance updates.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I pay extra for AI usage?</h4>
+                    <p>Yes, AI usage charges are separate for all plans. Pay separately for Claude API and Google Gemini based on actual consumption—transparent and fair.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>When should I upgrade to $20 or $40?</h4>
+                    <p><strong>$20:</strong> When you want to use AI features (Free doesn't include them). <strong>$40:</strong> When you need email support, priority bug fixes, and maintenance—for mission-critical operations.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I use Free forever?</h4>
+                    <p>Yes! No time limit. All features including AI, no support needed. Perfect for testing or non-critical use. No credit card required.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I switch plans anytime?</h4>
+                    <p>Yes! Upgrade/downgrade between Free, $20, or $40 instantly. Pay only for your current tier. No contracts, no penalties.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer integrations or API access?</h4>
+                    <p>Yes! We can discuss custom integrations and API access. Contact us at support@cloudaisoft.com with your specific requirements.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there data migration help available?</h4>
+                    <p>Yes, we can assist with migrating your existing pharmacy data. Customers on the With AI + Support plan get dedicated assistance with this process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 class="section-title cta-white-title">Let's Talk!</h2>
+        <p class="section-subtitle cta-white-subtitle">Reach out and we'll get back to you within 24 hours</p>
+        <div class="hero-buttons">
+            <a href="mailto:support@cloudaisoft.com" class="btn btn-primary">Email Us</a>
+            <a href="#contact-form" class="btn btn-secondary">Contact Form</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo footer-logo"><i class="fas fa-cloud"></i> CloudAiSoft</div>
+                <p class="footer-text">Intelligent Solutions Powered by AI</p>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <a href="products.html">All Products</a>
+                <a href="aipharmaccount.html">AIPharmAccount</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CloudAiSoft. Powered by Claude AI & Google Gemini.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
