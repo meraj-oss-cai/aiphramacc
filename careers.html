@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join CloudAiSoft and help build the future of AI-powered enterprise solutions.">
+    <title>Careers | CloudAiSoft</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .careers-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .careers-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .careers-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+            opacity: 0.95;
+        }
+
+        .jobs-container {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .job-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .job-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .job-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .job-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .job-meta-item i {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .job-description {
+            margin-bottom: 30px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .job-section {
+            margin-bottom: 25px;
+        }
+
+        .job-section h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .job-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .job-section li {
+            padding-left: 25px;
+            margin-bottom: 10px;
+            position: relative;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .job-section li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .apply-button {
+            background: var(--primary);
+            color: white;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .apply-button:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .open-positions {
+            background: #f8f9ff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .open-positions h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .position-count {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .why-join {
+            background: white;
+            padding: 60px 20px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .why-join h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            padding: 30px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .benefit-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .careers-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            .job-card {
+                padding: 25px;
+            }
+
+            .job-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                CloudAiSoft
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CAREERS HERO -->
+    <section class="careers-hero">
+        <h1>Join Our Growing Team</h1>
+        <p>Help us build the future of AI-powered enterprise solutions</p>
+    </section>
+
+    <!-- OPEN POSITIONS -->
+    <section class="open-positions">
+        <h2>We're Hiring</h2>
+        <p class="position-count">1 Position Available</p>
+    </section>
+
+    <!-- JOB LISTINGS -->
+    <section class="jobs-container">
+        <!-- QA Tester Internship Position -->
+        <div class="job-card">
+            <h2 class="job-title">QA Tester - Internship</h2>
+
+            <div class="job-meta">
+                <div class="job-meta-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Internship (Final Year)</span>
+                </div>
+                <div class="job-meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>3-6 Months</span>
+                </div>
+                <div class="job-meta-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Remote</span>
+                </div>
+            </div>
+
+            <div class="job-description">
+                <p>We're looking for a passionate final-year college student to join our team as a QA Tester Intern. This is a great opportunity to gain hands-on experience testing our AI-powered pharmacy management system (AIPharmAccount). You'll work with a team of experienced developers, learn quality assurance best practices, and contribute to a real enterprise product.</p>
+            </div>
+
+            <div class="job-section">
+                <h3><i class="fas fa-tasks"></i> What You'll Do</h3>
+                <ul>
+                    <li>Perform manual testing of web and desktop applications (JavaFX)</li>
+                    <li>Identify and document software bugs with clear steps to reproduce</li>
+                    <li>Create test cases and test scenarios for different features</li>
+                    <li>Test the AI-powered invoice parser and pharmacy management features</li>
+                    <li>Learn quality assurance methodologies and best practices</li>
+                    <li>Collaborate with the development team and provide feedback</li>
+                    <li>Help improve product quality and user experience</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <h3><i class="fas fa-star"></i> About You</h3>
+                <ul>
+                    <li>Currently in final year of B.Tech/MCA/BCA or equivalent degree</li>
+                    <li>Strong attention to detail and problem-solving mindset</li>
+                    <li>Basic understanding of software development concepts</li>
+                    <li>Familiarity with Java or any programming language (preferred)</li>
+                    <li>Excellent communication and reporting skills</li>
+                    <li>Ability to work independently and collaborate with team</li>
+                    <li>Eager to learn and grow in QA/Testing domain</li>
+                    <li>Enthusiasm for technology and software quality</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <h3><i class="fas fa-plus-circle"></i> A Plus If You Have</h3>
+                <ul>
+                    <li>Basic knowledge of testing frameworks like TestNG or JUnit</li>
+                    <li>Experience with Git/GitHub for version control</li>
+                    <li>Familiarity with healthcare/pharmacy domain</li>
+                    <li>Experience writing test cases or test documentation</li>
+                    <li>Understanding of databases and SQL</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <h3><i class="fas fa-info-circle"></i> Internship Details</h3>
+                <ul>
+                    <li><strong>Duration:</strong> 3-6 Months (Flexible)</li>
+                    <li><strong>Type:</strong> Full-time Internship</li>
+                    <li><strong>Location:</strong> Remote</li>
+                    <li><strong>Academic Credit:</strong> Can be counted towards final year project/internship requirement</li>
+                    <li><strong>Mentorship:</strong> You'll be guided by experienced QA and development team</li>
+                    <li><strong>Start Date:</strong> Immediate or as per your schedule</li>
+                </ul>
+            </div>
+
+            <div class="job-section" style="background: #fff8e1; padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                <h3 style="margin-top: 0;"><i class="fas fa-envelope"></i> How to Apply</h3>
+                <p style="margin: 0 0 15px 0;">Interested in this opportunity? Send us your resume and a brief cover letter explaining why you'd be a great fit for our team.</p>
+                <p style="margin: 0; color: #555;"><strong>Email:</strong> <a href="mailto:support@cloudaisoft.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">support@cloudaisoft.com</a></p>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <a href="mailto:support@cloudaisoft.com?subject=QA%20Tester%20Position%20Application" class="apply-button">
+                    <i class="fas fa-envelope"></i> Apply Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY JOIN US -->
+    <section class="why-join">
+        <h2>Why Join CloudAiSoft?</h2>
+        <div class="benefits">
+            <div class="benefit-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Learn & Grow</h3>
+                <p>Gain hands-on experience in QA and testing. Learn industry-standard practices and methodologies.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Build Your Portfolio</h3>
+                <p>Work on a real enterprise product (AIPharmAccount) that you can showcase to future employers.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-users"></i>
+                <h3>Mentorship</h3>
+                <p>Learn from experienced developers and QA professionals who'll guide your growth.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-laptop-home"></i>
+                <h3>Work Remotely</h3>
+                <p>Complete flexibility to work from home or anywhere. Manage your time around college schedule.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI Technology</h3>
+                <p>Work with cutting-edge AI systems (Claude AI, Google Gemini) powering enterprise solutions.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Certificate & Reference</h3>
+                <p>Get a certificate of completion and professional reference letter for your future job applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CloudAiSoft</h3>
+                <p>Building intelligent software solutions powered by AI.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><a href="mailto:support@cloudaisoft.com">support@cloudaisoft.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CloudAiSoft. All rights reserved. Made with <i class="fas fa-heart"></i> in India.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
